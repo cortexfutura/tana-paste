@@ -42,7 +42,7 @@
             Zotero.write('    - [[' + (item.creators[author].firstName || '') + ' ' + (item.creators[author].lastName || '') + ']] #[[Author]]\n');
           } else if (item.creators[author].lastName !== undefined) {
             // Only use the last name
-            Zotero.write('    - [[' (item.creators[author].lastName || '') + ']] #[[Author]]\n');
+            Zotero.write('    - [[' + (item.creators[author].lastName || '') + ']] #[[Author]]\n');
           } else {
             // Hypothetically impossible unless your DB is inconsistent for some reason
             Zotero.write('    - Unknown author');
